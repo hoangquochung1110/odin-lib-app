@@ -1,0 +1,134 @@
+:root {
+	--button--color:   rgb(206, 156, 122);
+	--form--color:  rgb(230, 198, 141);
+}
+
+html {
+	font-family: "Oswald", sans-serif;
+	background: url('../images/rainbox.jpeg');
+	background-color: var(--form--color);
+}
+
+header {
+	padding: 5px;
+	z-index: 1;
+}
+
+#header__title {
+	margin-top: 5px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+.popup {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+    margin: 40px auto 10px auto;
+	transition: 200ms ease-in-out;
+	transform: scale(0);
+}
+
+.popup--alive {
+	transform: scale(1);
+}
+
+#popup__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--form--color);
+	padding: 20px;
+	border-radius: 25px;
+}
+
+.popup__input {
+	padding: 15px;
+	border: 2px solid #797575;
+	border-radius: 10px;	
+	max-width: 400px;
+	margin: 8px auto;
+}
+
+#popup__form h3 {
+	font-size: 25px;
+	margin: 2px;
+}
+
+#popup__form button {
+	background-color: var(--button--color);
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 5px auto;
+	padding: 10px 20px;
+}
+
+#newbook {
+	border-radius: 50%;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	width: 50px;
+	height: 50px;
+	font-size: 35px;
+	background-color: rgb(206, 156, 122);
+	outline: none;
+	border: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+
+.popup__is-read {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 47%;
+}
+
+.book-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.book-container__items {
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	border: 0.5px solid;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.book-container__column {
+	font-weight: bolder;
+	margin: 4px;
+	
+}
+
+.book-container__read-button {
+	margin: auto 80px;
+    background-color: transparent;
+    border: 1px solid;
+	outline: none;
+}
+
+.book-container__remove-button {
+	background-color: transparent;
+    outline: none;
+    width: 10%;
+    height: 15%;
+    margin-left: 90%;
+    font-size: 8px;
+    border: none;
+}

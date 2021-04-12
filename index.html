@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1 id="header__title">Library</h1>
+	</header>
+	<div class="popup">
+		<form id="popup__form">
+			<h3>Add new book</h3>
+			<input class="popup__input" type="text" id="title" placeholder="Title" required/>
+			<input class="popup__input" type="text" id="author" placeholder="Author" required/>
+			<input class="popup__input" type="number" id="pages" placeholder="Pages" required/>
+			<div class="popup__is-read">
+				<label for="is-read">Read?</label>
+				<input class="popup__checkbox" type="checkbox" id="is-read" />
+			</div>
+			<button>Submit</button>
+		</form>
+	</div>
+	<button id="newbook">+</button>
+	<div class="overlay"></div>
+	<script src="js/index.js"></script>
+
+</body>
+</html>
